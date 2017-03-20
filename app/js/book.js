@@ -17,7 +17,7 @@ config(['$locationProvider', '$routeProvider', function($locationProvider, $rout
 	app.controller('BookController',['$http','$scope','$route','$routeParams',function($http,$scope,$route,$routeParams) {
 		var store = this;
 		store.product =[];
-		$http.get('http://localhost/book/book.json').success(function(data){
+		$http.get('http://localhost/angular-simple-book/book.json').success(function(data){
          store.product = data;
          console.log(data);
 
