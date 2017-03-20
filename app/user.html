@@ -1,0 +1,12 @@
+<div ng-controller="BookController as book">
+<div ng-repeat="products in book.product">
+
+<div ng-if="products.id == id">
+<h2 class="ng-scope ng-binding">{{products.title}}</h2>
+<br>
+	<h3 class="ng-scope ng-binding">Author :{{products.author}}</h3>
+	<h3 class="ng-class ng-binding">Book Price :{{products.price}}</h3>
+	<h3 class="ng-class ng-binding">Publicatin :{{products.publication}}</h3>
+	</div>
+</div>
+</div>

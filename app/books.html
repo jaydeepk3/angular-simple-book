@@ -1,0 +1,7 @@
+<div id="scrollArea"  ng-controller="BookController as book" ng-controller="scrollController" >
+<div ng-repeat="products in book.product" >
+
+ <a href="#!/details/{{products.id}}"> <h2 class="ng-scope ng-binding"  atr-id="books{{products.id}}">{{products.title}}</h2></a>
+
+  </div>
+  </div>
